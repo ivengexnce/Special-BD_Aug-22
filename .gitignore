@@ -45,6 +45,6 @@ yarn-error.log*
 convert_assets.js
 fix_refs.js
 
-# ── Keep tracked (explicit — do NOT add public/ or src/ here) ────────────────
-# public/images/**  → tracked (webp + mp4 assets)
-# src/**            → tracked (all source code)
+# ── Sensitive / personal assets ───────────────────────────────────────────────
+# public/ contains personal photos and videos — do NOT commit to remote
+/public/images/
