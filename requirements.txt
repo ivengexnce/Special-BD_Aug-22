@@ -1,0 +1,80 @@
+# ══════════════════════════════════════════════════════════════════════════════
+#  Special-BD_Aug-22 — Requirements
+#  A cinematic birthday universe built for Aashu 🌸
+# ══════════════════════════════════════════════════════════════════════════════
+#
+#  This is a Node.js / Next.js project.
+#  There is no pip install — use:
+#
+#    npm install       ← installs all dependencies from package.json
+#    npm run dev       ← starts local dev server at http://localhost:3000
+#    npm run build     ← creates production build
+#    npm start         ← runs production server
+#
+# ── Runtime: Node.js ≥ 18.x recommended ──────────────────────────────────────
+
+# ── Framework ─────────────────────────────────────────────────────────────────
+next@16.3.1                      # App router, server components, image optimisation
+react@19.2.8                     # UI library
+react-dom@19.2.8                 # DOM bindings for React
+
+# ── 3D / WebGL ────────────────────────────────────────────────────────────────
+three@^0.185.1                   # 3D engine (WebGL)
+@react-three/fiber@^9.7.0        # React renderer for Three.js
+@react-three/drei@^10.7.8        # Helpers & abstractions for R3F
+@react-three/postprocessing@^3.0.5  # Bloom, chromatic aberration, etc.
+postprocessing@^6.39.4           # Post-processing effects (peer dep)
+
+# ── Animation ─────────────────────────────────────────────────────────────────
+gsap@^3.15.0                     # GSAP — scroll triggers, timelines, typewriter
+@gsap/react@^2.1.2               # React hooks for GSAP
+framer-motion@^13.1.0            # Motion components (AnimatePresence, motion.div)
+lenis@^1.3.26                    # Smooth scroll (synced with GSAP ScrollTrigger)
+
+# ── Audio ─────────────────────────────────────────────────────────────────────
+howler@^2.2.4                    # Web audio — background music, mute control
+
+# ── Particles / Confetti ──────────────────────────────────────────────────────
+@tsparticles/engine@^4.3.2       # Particle engine core
+@tsparticles/react@^4.3.2        # React component wrapper
+@tsparticles/slim@^4.3.2         # Lightweight particle preset bundle
+canvas-confetti@^1.9.4           # Canvas-based confetti bursts
+@types/canvas-confetti@^1.9.0    # TypeScript types for canvas-confetti
+
+# ── 3D Spline (scene embedding) ───────────────────────────────────────────────
+@splinetool/react-spline@^4.1.0  # React component for Spline 3D scenes
+@splinetool/runtime@^1.12.98     # Spline runtime (peer dep)
+
+# ── Dev Dependencies ──────────────────────────────────────────────────────────
+typescript@^5                    # TypeScript compiler
+@types/node@^20                  # Node.js type definitions
+@types/react@^19                 # React type definitions
+@types/react-dom@^19             # ReactDOM type definitions
+@types/three@^0.185.4            # Three.js type definitions
+@types/howler@^2.2.13            # Howler.js type definitions
+eslint@^9                        # Linter
+eslint-config-next@16.3.1        # Next.js ESLint rules
+
+# ── Asset Pipeline (used during build/setup, not a runtime dep) ───────────────
+sharp@0.35.3                     # Image conversion: JPG/JPEG → WebP (via Next.js)
+ffmpeg-static@^5.3.0             # FFmpeg binary: MP4 optimisation (-movflags faststart)
+
+# ══════════════════════════════════════════════════════════════════════════════
+#  Quick Setup
+# ══════════════════════════════════════════════════════════════════════════════
+#
+#  1. Clone the repo
+#     git clone https://github.com/ivengexnce/Special-BD_Aug-22.git
+#     cd Special-BD_Aug-22
+#
+#  2. Install dependencies
+#     npm install
+#
+#  3. Run dev server
+#     npm run dev
+#     → open http://localhost:3000
+#
+#  4. Production build
+#     npm run build && npm start
+#
+# ══════════════════════════════════════════════════════════════════════════════
