@@ -35,14 +35,14 @@ export const metadata: Metadata = {
   title: "Kitty 🐈",
   description: "A specially crafted cinematic universe for your birthday.",
   openGraph: {
-    title: "Kitty 🐈 — A Universe Built For You",
+    title: "Kitty 🐈",
     description: "A specially crafted cinematic birthday experience.",
     images: [{ url: "/images/main.webp", width: 1200, height: 630, alt: "A's Universe" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kitty 🐈 — A Universe Built For You",
+    title: "Kitty 🐈",
     description: "A specially crafted cinematic birthday experience.",
     images: ["/images/main.webp"],
   },
