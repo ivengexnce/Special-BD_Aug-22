@@ -41,10 +41,3 @@ yarn-error.log*
 # ── Testing ───────────────────────────────────────────────────────────────────
 /coverage
 
-# ── Utility / temp scripts (not part of the app) ─────────────────────────────
-convert_assets.js
-fix_refs.js
-
-# ── Sensitive / personal assets ───────────────────────────────────────────────
-# public/ contains personal photos and videos — do NOT commit to remote
-/public/images/
