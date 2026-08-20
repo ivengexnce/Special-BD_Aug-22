@@ -1,6 +1,4 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# ── Dependencies ──────────────────────────────────────────────────────────────
 /node_modules
 /.pnp
 .pnp.*
@@ -10,32 +8,43 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
-
-# next.js
+# ── Next.js build output ──────────────────────────────────────────────────────
 /.next/
 /out/
-
-# production
 /build
 
-# misc
-.DS_Store
-*.pem
+# ── TypeScript ────────────────────────────────────────────────────────────────
+*.tsbuildinfo
+next-env.d.ts
 
-# debug
+# ── Environment files ─────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Vercel ────────────────────────────────────────────────────────────────────
+.vercel
+
+# ── OS / Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.pem
+.vscode/*
+!.vscode/extensions.json
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# ── Testing ───────────────────────────────────────────────────────────────────
+/coverage
 
-# vercel
-.vercel
+# ── Utility / temp scripts (not part of the app) ─────────────────────────────
+convert_assets.js
+fix_refs.js
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# ── Keep tracked (explicit — do NOT add public/ or src/ here) ────────────────
+# public/images/**  → tracked (webp + mp4 assets)
+# src/**            → tracked (all source code)
