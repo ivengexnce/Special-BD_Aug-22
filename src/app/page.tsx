@@ -12,7 +12,7 @@ import FinaleSection from "@/components/FinaleSection";
 import LetterSection from "@/components/LetterSection";
 import PhotoLightbox from "@/components/PhotoLightbox";
 import SpotifySection from "@/components/SpotifySection";
-import { shuffledGallery, herGallery, randomsGallery } from "@/lib/images";
+import { shuffledGallery, herGallery, randomsGallery, bestGallery } from "@/lib/images";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,7 +22,7 @@ export default function Home() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const lightboxImages = shuffledGallery.map((img) => `/images/${img}`);
+  const lightboxImages = shuffledGallery.map((img) => `/images/${img.src}`);
 
   useEffect(() => {
     if (!loading && containerRef.current) {
@@ -325,6 +325,15 @@ export default function Home() {
           <MemoryGallery />
 
           {/* SECTION 6: The Infinite Archive — clicking images opens lightbox */}
+          <MasonryGallery
+            title="Best Of"
+            subtitle=""
+            images={bestGallery}
+            onImageClick={(index) => {
+              setLightboxIndex(index);
+              setLightboxOpen(true);
+            }}
+          />
           <MasonryGallery
             title="Just Her"
             subtitle="The main character."

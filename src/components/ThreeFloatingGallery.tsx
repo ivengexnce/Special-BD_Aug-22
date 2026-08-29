@@ -134,7 +134,7 @@ function makeUniforms(tex: THREE.Texture, opacity: number) {
 
 function FloatingPhotos() {
   const { clock } = useThree();
-  const textures = useTexture(threeGallery.map(img => `/images/${img}`));
+  const textures = useTexture(threeGallery.map(img => `/images/${img.src}`));
   const cfgs = useMemo(() => buildPhotoCfg(textures.length), [textures.length]);
 
   // Stable uniforms array — one set per photo

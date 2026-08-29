@@ -3,7 +3,6 @@
 import { useEffect, useRef, useCallback, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { shuffledGallery } from "@/lib/images";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -102,7 +101,7 @@ const memories = [
   {
     id: 15,
     date: "Archive",
-    spotifyId: "3yV2c3cYhkAwSsxAq6nRiv",
+    spotifyId: "3x55c9UVpbURc2T02DLfEM",
     imgSrc: "/images/everything/everything22.webp",
     caption: `And we keep adding to the story... ✨\n\n"आपला हा प्रवास असाच सुरू राहो. 🌸"`,
   },
